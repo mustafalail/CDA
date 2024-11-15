@@ -1,0 +1,64 @@
+model USE_Specifications
+
+enum Classtype {abstract}
+
+class Classdefinition
+attributes
+classname : String
+end
+
+class Option
+end
+
+class Operation
+end
+
+class Oclexpression
+end
+
+class Operationconstraints
+end
+
+class Operationdeclaration
+end
+
+class PreorPostCondition
+end
+
+class Type
+end
+
+class Attribute
+attributes
+attributename : String
+end
+
+class Invariantdefinition
+end
+
+class Associationclassdefinition
+end
+
+class Associationdefinition
+attributes
+associationname : String
+end
+
+class Multiplicity
+end
+
+class Constraintdefinition
+attributes
+classname : String
+end
+
+class UMLmodel
+atributes
+modelname : String
+end
+
+class Modelbody
+end
+
+class Enumerationdefinition
+end 

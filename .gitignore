@@ -1,0 +1,5 @@
+src/
+build/
+lib/plugins/CDA-main/
+lib/plugins/STMTransformation-main/
+*.zip

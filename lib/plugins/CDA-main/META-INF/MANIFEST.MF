@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Plugin-Name: STMPlugin
+Plugin-Version: 0.1
+Main-Class: org.tzi.use.CDAPlugin.CDAPlugin
+Plugin-Publisher: Antonio Rosales Viesca

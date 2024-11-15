@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?use version="6.0.0"?>
+<plugin name="STMPlugin" version="1.0">
+    <actions>
+        <action label="Temporal Property Validation"
+                icon="resources/idk.png"
+                class="org.tzi.use.STMPlugin.STMPluginAction"
+                tooltip="Input a UML class model and file with TOCL properties and transform."
+                menu="Temporal Property Validation"
+                menuitem="Temporal Property Validation"
+                toolbaritem="plugins"
+                id="org.tzi.use.STMPlugin.STMPluginAction">
+        </action>
+    </actions>
+    <commands>
+        <command shellcmd="stmTransform"
+                 label="STMTransformation"
+                 help="Transforms current model into a Snapshot Transition Model and translates TOCL properties to OCL."
+                 class="org.tzi.use.STMPlugin.STMPluginCMD"
+                 id="org.tzi.use.STMPlugin.STMPluginCMD">
+        </command>
+        <command shellcmd="loadXmi"
+                 label="LoadXMI"
+                 help="Creates and loads a USE specification file from a UML class diagram stored in an XMI file"
+                 class="org.tzi.use.STMPlugin.STMPluginCMD"
+                 id="org.tzi.use.STMPlugin.STMPluginCMD">
+        </command>
+    </commands>
+</plugin>
