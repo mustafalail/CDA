@@ -9,9 +9,13 @@ This repository contains a modified distribution of USE that includes our CDA pl
 Note: You must install the Java Runtime Environment in order to run USE.
 
 ## Overview of USE
-We have used MDE technologies to define, implement, and package the code of the CDA tool as a plugin for the UML-based Specification Environment (USE). We provide a video overview of how to create UML design class diagrams and load them into USE for analysis. This tutorial can be watched below and can also be acessed on YouTube.
+We have used MDE technologies to define, implement, and package the code of the CDA tool as a plugin for the UML-based Specification Environment (USE). We provide a video overview of how to create UML design class diagrams and load them into USE for analysis. This tutorial can be watched below and can also be acessed on [YouTube](https://www.youtube.com/watch?v=44PB0AZTZjA).
 
- USE.Tutorial.mp4 
+
+https://github.com/user-attachments/assets/e8fe7339-aada-407a-a080-e13d08023f37
+
+
+
 ## Running CDA
 ### Running USE on Windows
 
@@ -162,20 +166,27 @@ This folder includes a .uml file of the model and a folder of temporal propertie
 
 To evaluate CDA, we used a survey based on the innovative user needs experience (NX) evaluation method proposed by Zarour, 2020. The method is based on three pillars:
 
-Evaluation theory from the social sciences.
-The ISO/IEC SQuaRE 25000 series standards.
-The NX dimension of the UX framework.
+1. Evaluation theory from the social sciences.
+
+2. The ISO/IEC SQuaRE 25000 series standards.
+
+3. The NX dimension of the UX framework.
+
 The survey contains a total of 44 questions grouped into four sections focusing on:
 
-Usefulness: How useful do you find CDA?
-Pleasure: How much do you enjoy using CDA?
-Aesthetics: How appealing do you find the user interface of CDA?
-Trust: How much do you trust CDA to be reliable and secure?
+**Usefulness**: How useful do you find CDA?
+
+**Pleasure**: How much do you enjoy using CDA
+
+**Aesthetics**: How appealing do you find the user interface of CDA?
+
+**Trust**: How much do you trust CDA to be reliable and secure?
+
 After each group of questions, the survey includes a section where users can provide qualitative feedback on each section or suggestions for improvement. To get insights into the user experience of CDA, we collected responses from a sample of student participants in the software design and software engineering courses at Texas A&M International University. We wanted to make the study as realistic as possible for actual CDA users, so we did not provide the students with formal training on MDE, model checking, or temporal property specification. Instead, we instructed the students to download CDA from this GitHub repository, watch a few tools overview videos, and follow the instructions to download and run the tool. Additionally, we provided the students with an evaluation guide that gave them some basic training on software specification and validation and two specification and validation case studies that they should complete before responding to the survey questions. We gave the students two weeks to complete the survey independently, without supervision. A total of 19 student participants responded to the study.
 
 ### Evaluation Guide
 
-We have created the following linked simple document to guide through the evaluation process--CDA Evaluation Guide. After completing the tasks in the guide, the students completed the survey and gave ratings of each question.
+We have created the following linked simple document to guide through the evaluation process--[CDA Evaluation Guide](https://docs.google.com/document/d/1otBNhrkt0rW8WY37WpMNodvuUxJDazzzdPBzR4oBwFg/). After completing the tasks in the guide, the students completed the survey and gave ratings of each question.
 
 **Survey Questions**
 
