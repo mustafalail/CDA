@@ -1,23 +1,23 @@
-**Class Diragram Analyzer (CDA)**
-CDA Overview and Demo
+# Class Diragram Analyzer (CDA)
+
+## CDA Overview and Demo
 We have created a video demonstration of CDA that can be viewed below or through YouTube CDA Demonstration.
 
- TPV.Demo.mp4 
-CDA Installation Instructions
+## CDA Installation Instructions
 This repository contains a modified distribution of USE that includes our CDA plug-in. To install the tool, download the repository files as a zip folder and extract them in the desired install directory.
 
 Note: You must install the Java Runtime Environment in order to run USE.
 
-Overview of USE
+## Overview of USE
 We have used MDE technologies to define, implement, and package the code of the CDA tool as a plugin for the UML-based Specification Environment (USE). We provide a video overview of how to create UML design class diagrams and load them into USE for analysis. This tutorial can be watched below and can also be acessed on YouTube.
 
  USE.Tutorial.mp4 
-Running CDA.
-Running USE on Windows
+## Running CDA
+### Running USE on Windows
 
 Open the bin folder and run the ‘use’ executable.
 
-Running USE on Mac
+### Running USE on Mac
 
 Open a terminal window.
 Traverse to the lib directory of the downloaded USE files
@@ -36,10 +36,10 @@ MainWindow
 
 Figure 2. CDA Main Window
 
-A Brief Tour of CDA
+## A Brief Tour of CDA
 In the following, we present a brief "tour" of the CDA tool. The purpose of this tour is to quickly give a demonstration of the functionality of the tool and to introduce new users to its workflow.
 
-Part 1: Modeling System Structure
+### Part 1: Modeling System Structure
 CDA utlizes UML class diagrams as its primary modeling artifacts. Users can create UML diagrams in on of two ways.
 
 Firstly, because CDA is built on top of the USE tool, users can specify class diagrams in the USE specification format. They can do this by creating a .use file then importing it into USE, or by utilizing the built in file editor in the UI.
@@ -72,7 +72,7 @@ Figure 5. Class diagram of the TrafficLight system.
 
 The class diagram we have created offers a good structural representation of our system. In the following section, we will utilize CDA in order to verify whether the structures we have created can be insantiated as we expect.
 
-Part 2: Structural Simulation
+### Part 2: Structural Simulation
 Having created a class diagram sucessfully, we can use CDA to perform structural analysis on our design. To do this, we first open the CDA window and the structural analysis panel. We then make sure the analysis mode for the tool is set to "Simulation".
 
 CDA structural analysis window
@@ -91,7 +91,7 @@ Figure 7. Object diagram of a system state satisfying the analysis parameters of
 
 We ensured that our model can be instantiated as expected. However, we have only specified a structure for our system. Its behavior is still undefined. In the next part of the tour, we will look at how we can specify system behavior in CDA.
 
-Part 3: Specifying System Behavior
+### Part 3: Specifying System Behavior
 To create a behavioral specification for our syste we can perform two tasks. First, we define class operations that will model the kinds of events that can occur in the system. Here, we define the operations switchPedLight and switchCarLight on the TrafficLight class and the operation requestPass on the button class. To describe the behavior of each of these operations we utilize OCL constraints. By using OCL pre- and postconditions, we specify how each operation should affect the current system state when executed. Figure 8 shows the resulting specification.
 
 Behavioral specification of the system
@@ -100,7 +100,7 @@ Figure 8. Structural and behavioral specification of the system.
 
 We can then employ CDA to create an instance of valid system behavior.
 
-Part 4: Simulating System Behavior
+### Part 4: Simulating System Behavior
 When we simulate system behavior in CDA, the tool searches for a "scenario" that demonstrates the behavior we are looking for. The user has multiple ways of being presented to the user, as we will see soon. For now, we open the CDA window as we did when simulating system structure, except we now navigate to the behavioral analysis panel and appropriately select simulation as the analysis mode for the tool as shown below.
 
 Behavioral specification of the system
@@ -125,7 +125,7 @@ STM scenario
 
 Figure 11. Sequence diagram of the traffic light scenario.
 
-Part 5: Validating System Behavior
+### Part 5: Validating System Behavior
 We have now seen that the model we specified can simulate the behavior we want. However, suppose that we want the temporal property we specified earlier, that a pedestrian light should change as soon as it is requested, to hold for every possible scenario. How can we ensure that the property is not violated by the system? The answer is that we can utilize CDA to validate whether a property is violated across a specified search space. Once more, we open the CDA window and specify the same property we did before, except this time we set CDA to "Validation" mode.
 
 CDA window
@@ -146,7 +146,7 @@ This scenario presents a trace of valid system execution in which a light is req
 
 Running the analyis again, we can see that the analysis finds no scenario that can violate the property. Of course, it is important to remember that the search-space is limited by our search parameters and users can increment the search-space if they wish to increase their confidence that there is no possible state in which the property is violated.
 
-Part 6: End of Tour
+### Part 6: End of Tour
 In this tour, we covered the majority of the functionality offered by CDA. Nevertheless, this tour is not exhaustive and there are some details and advanced options which cannot be practically summarized in what is supposed to be a brief overview. Therefore, we invite users to explore advanced configurations and features of CDA once they are familiar with the tool. Both by experimenting independently and by reading the papers dwelving deep into the technical details behind CDA.
 
 Along with the tool, we have provided a few examples in the examples folder of this repository including a Traffic Light model and a Steam Boiler Control System Model, both with temporal properties.
@@ -157,8 +157,8 @@ Figure 15. TrafficLight example folder
 
 This folder includes a .uml file of the model and a folder of temporal properties.
 
-CDA Evaluation
-Evaluation Methodology
+## CDA Evaluation
+### Evaluation Methodology
 
 To evaluate CDA, we used a survey based on the innovative user needs experience (NX) evaluation method proposed by Zarour, 2020. The method is based on three pillars:
 
@@ -173,19 +173,19 @@ Aesthetics: How appealing do you find the user interface of CDA?
 Trust: How much do you trust CDA to be reliable and secure?
 After each group of questions, the survey includes a section where users can provide qualitative feedback on each section or suggestions for improvement. To get insights into the user experience of CDA, we collected responses from a sample of student participants in the software design and software engineering courses at Texas A&M International University. We wanted to make the study as realistic as possible for actual CDA users, so we did not provide the students with formal training on MDE, model checking, or temporal property specification. Instead, we instructed the students to download CDA from this GitHub repository, watch a few tools overview videos, and follow the instructions to download and run the tool. Additionally, we provided the students with an evaluation guide that gave them some basic training on software specification and validation and two specification and validation case studies that they should complete before responding to the survey questions. We gave the students two weeks to complete the survey independently, without supervision. A total of 19 student participants responded to the study.
 
-Evaluation Guide
+### Evaluation Guide
 
 We have created the following linked simple document to guide through the evaluation process--CDA Evaluation Guide. After completing the tasks in the guide, the students completed the survey and gave ratings of each question.
 
-Survey Questions
+**Survey Questions**
 
 The actual questions of the survey can be accessed through the following link (Questions.)
 
-Evaluation Participation
+**Evaluation Participation**
 
 We would love to hear your feedback about CDA. If you would like to provide your feedback, you can fill out the following survey at CDA Survey. Your thoughtful feedback is greatly appreciated.
 
-References
+## References
 1. Al-Lail, Mustafa, Ramadan Abdunabi, Robert B. France, and Indrakshi Ray. "An Approach to Analyzing Temporal Properties in UML Class Models." In MoDeVVa@ MoDELS, pp. 77-86. 2013.
 2. Al-Lail, Mustafa. "A Framework for Specifying and Analyzing Temporal Properties of UML Class Models." In MoDELS (Demos/Posters/StudentResearch), pp. 112-117. 2013.
 3. Al-Lail, Mustafa, Ramadan Abdunabi, Robert B. France, and Indrakshi Ray. "Rigorous Analysis of Temporal Access Control Properties in Mobile Systems." In 2013 18th International Conference on Engineering of Complex Computer Systems, pp. 246-251. IEEE, 2013.
