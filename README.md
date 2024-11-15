@@ -194,7 +194,7 @@ The actual questions of the survey can be accessed through the following link (Q
 
 **Evaluation Participation**
 
-We would love to hear your feedback about CDA. If you would like to provide your feedback, you can fill out the following survey at CDA Survey. Your thoughtful feedback is greatly appreciated.
+We would love to hear your feedback about CDA. If you would like to provide your feedback, you can fill out the following survey at [CDA Survey](https://docs.google.com/forms/d/e/1FAIpQLSdleIrxInaRHUeIHMa886I3lrY2fKx7C5OCtbJeZV2_CPOePQ/viewform?usp=sf_link). Your thoughtful feedback is greatly appreciated.
 
 ## References
 1. Al-Lail, Mustafa, Ramadan Abdunabi, Robert B. France, and Indrakshi Ray. "An Approach to Analyzing Temporal Properties in UML Class Models." In MoDeVVa@ MoDELS, pp. 77-86. 2013.
