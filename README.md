@@ -36,8 +36,7 @@ Figure 1. USE Main Window
 
 This opens the CDA Main Window shown below:
 
-MainWindow
-
+![Tour_CDA_Structural_1](https://github.com/user-attachments/assets/02cf7eff-b1b7-4f6d-977e-59dbd8e3db42)
 Figure 2. CDA Main Window
 
 ## A Brief Tour of CDA
@@ -52,7 +51,6 @@ Users may also create class diagrams outside of CDA and USE entirely and opt to 
 
 In this tour we will specify a class diagram for a simple TrafficLight system. This system models the relationship between traffic light and pedestrian crossing buttons. We can begin to specify a model for this system by opening USE, opening the file editor, and writing the folowing stump.
 
-Stump of TrafficLight system specification
 
 Figure 2. Stump of TrafficLight system specification.
 
