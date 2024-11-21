@@ -1,7 +1,7 @@
 # Class Diragram Analyzer (CDA)
 
 ## CDA Overview and Demo
-We have created a video demonstration of CDA that can be viewed below or through YouTube CDA Demonstration.
+We have created a video demonstration of CDA that can be viewed through YouTube [CDA Demonstration](https://www.youtube.com/watch?v=gcefDPYBIBk).
 
 ## CDA Installation Instructions
 This repository contains a modified distribution of USE that includes our CDA plug-in. To install the tool, download the repository files as a zip folder and extract them in the desired install directory.
